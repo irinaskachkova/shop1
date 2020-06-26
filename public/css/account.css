@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
+
+body, html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.loginform {
+  width: 50%;
+  margin: 5px 0 10px 0;
+  display: inline-block;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.loginform h2 {
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+}
+
+.loginform label {
+  color: grey;
+  font-size: 12px;
+}
+
+.loginform a {
+  color: #808080;
+  font-size: 16px;
+}
+
+.loginform a:hover {
+  color: #800000; /* Цвет ссылки */
+}
+
+.loginform button {
+  width: 100%;
+  background-color: black;
+  color:white;
+  border: 0;
+  border-radius: 3px;
+  height: 45px;
+}
+
+.registerbtn {
+  margin: 0 auto;
+  text-align: center;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.register-footer {
+  height: 30px;
+  background-color: black;
+  flex-shrink: 0;
+}
+.register-footer p {
+  color:white;
+  font-family:  'Roboto Slab', serif;
+}

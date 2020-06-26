@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <!--Meta -->
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>NAME</title>
+    <!-- Favicon -->
+    <!--    <link rel="icon" href="./img/core-img/favicon.ico">-->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,300" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+</head>
+
+<body>
+<header class="header-area">
+    <div class="container-fluid"> 
+        <div class="row">
+          <div class="col-lg" style="background-color:lightgrey;">
+            <p><i class="fa fa-phone" aria-hidden="true"></i> 8 (800) XXX-XX-XX</p>
+          </div>
+          <div class="col-lg-6-auto text-center" style="background-color:lightgrey;">
+            <p>БЕСПЛАТНАЯ ДОСТАВКА КУРЬЕРОМ от 20000 рублей <a href="">Подробнее</a></p>
+          </div>
+          <div class="col-lg text-right" style="background-color:lightgrey;">
+            <p>Москва, <i class="fa fa-rub custom"></i> RUB</p>
+          </div>
+        </div>
+    </div>
+
+</header>
+
+<div class="login">
+    <div class="container">
+        <div class="row mt-20 justify-content-around">
+            <form class="loginform">
+                <h2>У Вас еще нет аккаунта? </h2>
+                <div id="app" class="loginform-fields">
+                        <label>ИМЯ</label>
+                        <input v-model="username" type="text" name="username" required>
+
+                        <label>E-MAIL</label>
+                        <input v-model="email" type="text" name="email" required>
+
+                        <label>ПАРОЛЬ</label>
+                        <input v-model="password" type="password" name="psw" required>
+
+                        <label>ПОДТВЕРДИТЕ ПАРОЛЬ</label>
+                        <input v-model="password_confirm" type="password" name="psw-confirmation" required>
+
+                
+                        <p>При регистрации вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+                        <p>Login: {{ username }}</p>
+                        <p>Email: {{ info }}</p>
+                        <button type="submit">ЗАРЕГИСТРИРУЙТЕСЬ</button>
+                        <p>У вас уже есть аккаунт? <a href="#">Войдите в личный кабинет</a></p>  
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<footer class="register-footer">
+    <div class="container">
+        <div class="row mt-20">
+            <div class="col text-left">
+                <p>НУЖНА ПОМОЩЬ?</p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i> 8 (800) XXX-XX-XX</p>
+            </div>
+        </div>
+    </div>
+</footer> 
+ <!-- <div id="app">
+  {{ message }}
+</div> -->
+<script src="register.js"></script>
+</body>
+</html>
